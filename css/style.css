@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Livvic', sans-serif;
+}
+
+.bg {
+	position: absolute;
+	/*position: relative;*/
+	background: url("../img/bg_ho.png")  no-repeat top/100% 100%;
+	width: 1000px;
+	height: 600px;
+	z-index: -2;
+}
+
+.footer{
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+.footer_off {
+	transition: 1s;
+	opacity: 0;
+	/*pointer-events: none;*/
+}
+
+.object {
+	display: block;
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	background-size: contain;
+}
+
+.object_off {
+	transition: 1s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.texts {
+	display: flex;
+	height: 100%;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.text {
+	font-size: 15pt;
+	padding-bottom: 30px;
+}
+
+
+
+.text_off {
+	transition: 1s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+
+.tutorial {
+	position: absolute;
+	left: 50%;
+	margin-left:-12.5%;
+	top: 2%;
+	width: 250px;
+	height: 100px;
+	background: url("../img/Tutorial1.png")  no-repeat top/100% 100%;
+
+}
+
+.tutorial_t {
+	display: flex;
+	font-size: 15pt;
+	justify-content: center;
+	margin-top: 13%;
+	text-align: center;
+	animation: pulsing 5s infinite;
+}
+
+.tutorial_off {
+	transition: 1s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(1.0, 1.0);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+   color: #691502;
+  }
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+.finish {
+	/*display: none;*/
+	opacity: 0;
+	pointer-events: none;
+}
+
+.finish_o{
+	/*display: inline;*/
+	transition: 2s;
+	opacity: 1;
+	pointer-events: auto;
+}
+
+
+
+.play_free {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left: 50%;
+	margin-left:-25%;
+	top: 10%;
+	width: 500px;
+	/*background: red;*/
+}
+
+.logo {
+	width: 100%;
+	height: 60%;	
+}
+
+.button {
+	text-decoration: none;
+	color: #000 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 150px;
+	background: url("../img/button.png")  no-repeat top/100% 100%;
+	animation: pulsing1 3s infinite;
+}
+
+.text_button {
+	font-size: 50pt;
+}
+
+
+@keyframes pulsing1 {
+  0% {
+    transform: scale(1.0, 1.0);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+   color: #691502;
+  }
+  100% {
+    transform: scale(1.0, 1.0);
+  }
+}
+
+/*.list {
+	animation: pulsing1 3s infinite;
+}*/
